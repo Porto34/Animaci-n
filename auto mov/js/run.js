@@ -1,0 +1,15 @@
+var container = document.querySelector(".container")
+var llanta1 = document.querySelector(".llantas")
+var llanta2 = document.querySelector(".llantas1")
+var polvo = document.querySelector(".polvo")
+var luz = document.querySelector(".luz")
+container.addEventListener('click', animacionTod)
+function animacionTod(){
+    container.classList.add('fondoMover')
+    llanta1.classList.add('llantasmover')
+    llanta2.classList.add('llantasmover')
+    polvo.classList.add('polvomover')
+    luz.classList.add('luzmover')
+    polvo.classList.remove('oculto')
+    luz.classList.remove('oculto')
+}

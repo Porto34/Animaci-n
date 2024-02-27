@@ -1,0 +1,96 @@
+.container{
+    position: relative;
+    height: 110vh;
+    width: 100%;
+    background-image: url(../multimedia/fondiu.png);
+    background-size: cover;
+
+}
+.fondoMover{
+    animation: fondoMover 5s infinite linear;
+}
+.carro img{
+
+    position: absolute;
+    height: 40vh;
+    width: 70%;
+    top: 35rem;
+    left: 20rem;
+   
+}
+.llanta1 img{
+    position: absolute;
+   
+    width: 15%;
+    background-repeat: no-repeat;
+    left: 45vh;
+    top: 80vh;
+}
+.llanta2 img{
+    position: absolute;   
+    width: 15%;
+    background-repeat: no-repeat;
+    left: 130vh;
+    top: 80vh;
+    
+}
+.llantas{
+    
+}
+.llantasmover{
+    animation: llantasmover 1s infinite linear;
+
+}
+.luz img{
+    position: absolute;
+    width: 25%;
+    top: 55vh;
+    left: 150vh;
+    
+}
+.luzmover{
+    animation: parpadeo 1s infinite linear;
+}
+.polvo{
+    width: 372.25px;
+    height: 202px;
+    background: url("../multimedia/polvo.png");
+    position: absolute;
+    top: 45rem;
+    left: 3rem;
+
+}
+.oculto{
+    display: none;
+}
+.polvomover{
+    animation: polvo 2s infinite steps(15);
+}
+@keyframes llantasmover{
+    100%{
+        transform: rotate(350deg);
+    }
+}
+@keyframes llantas {
+    100%{
+        transform: rotate(350deg);
+    }    
+}
+@keyframes parpadeo{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fondoMover{
+    100%{
+        background-position-x: -2000px;
+    }
+}
+@keyframes polvo{
+    100%{
+        background-position-x: -785px;
+    }
+}
